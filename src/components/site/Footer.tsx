@@ -1,4 +1,4 @@
-import { Phone, MapPin, Instagram, Facebook } from "lucide-react";
+import { Phone, MapPin, Instagram } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site-config";
 
 const footerLinks = [
@@ -36,15 +36,6 @@ export function Footer() {
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-dental"
               >
                 <Instagram className="h-4 w-4" />
-              </a>
-              <a
-                href={siteConfig.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-dental"
-              >
-                <Facebook className="h-4 w-4" />
               </a>
             </div>
           </div>

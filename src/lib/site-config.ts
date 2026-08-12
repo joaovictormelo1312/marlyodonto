@@ -22,7 +22,7 @@ export const siteConfig = {
     count: 8,
   },
   social: {
-    instagram: "#",
+    instagram: "https://www.instagram.com/dentistateresamarly?igsh=YzV4bnF5Mnk1M2Iy",
     facebook: "#",
   },
 } as const;
