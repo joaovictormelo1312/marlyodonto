@@ -40,7 +40,7 @@ export function CTASection() {
             asChild
             variant="outline"
             size="lg"
-            className="border-white/30 text-white hover:bg-white/10"
+            className="border-white/40 bg-transparent text-white hover:bg-white/10"
           >
             <a href={siteConfig.address.mapsUrl} target="_blank" rel="noopener noreferrer">
               <Calendar className="mr-2 h-5 w-5" />
