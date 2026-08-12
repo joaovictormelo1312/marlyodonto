@@ -36,17 +36,15 @@ export function CTASection() {
               Falar no WhatsApp
             </a>
           </Button>
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="border-white/40 bg-transparent text-white hover:bg-white/10"
+          <a
+            href={siteConfig.address.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-10 items-center justify-center gap-2 rounded-md border border-white/40 bg-transparent px-8 text-sm font-medium text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white"
           >
-            <a href={siteConfig.address.mapsUrl} target="_blank" rel="noopener noreferrer">
-              <Calendar className="mr-2 h-5 w-5" />
-              Ver localização
-            </a>
-          </Button>
+            <Calendar className="h-5 w-5" />
+            Ver localização
+          </a>
         </div>
         <p className="mt-4 text-sm text-white/80">
           {siteConfig.whatsapp.display} · {siteConfig.address.short}
