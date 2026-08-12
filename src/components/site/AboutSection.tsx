@@ -43,16 +43,15 @@ export function AboutSection() {
             </p>
 
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              Há mais de uma década, a Dra. Teresa Marly transforma vidas por meio
-              da odontologia. Com mãos leves, bom humor e compromisso com a
-              excelência, ela conduz cada tratamento com cuidado humano e
-              tecnologia de ponta.
+              Há mais de uma década, a Dra. Teresa Marly transforma vidas por meio da odontologia.
+              Com mãos leves, bom humor e compromisso com a excelência, ela conduz cada tratamento
+              com cuidado humano e tecnologia de ponta.
             </p>
 
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Seja para um implante, uma restauração ou um simples cuidado de
-              prevenção, aqui você encontra um ambiente acolhedor, equipe atenciosa
-              e resultados que valorizam sua saúde e autoestima.
+              Seja para um implante, uma restauração ou um simples cuidado de prevenção, aqui você
+              encontra um ambiente acolhedor, equipe atenciosa e resultados que valorizam sua saúde
+              e autoestima.
             </p>
 
             <div className="mt-6 space-y-3">
@@ -72,14 +71,9 @@ export function AboutSection() {
               {highlights.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <div
-                    key={item.label}
-                    className="rounded-xl bg-white p-4 text-center shadow-sm"
-                  >
+                  <div key={item.label} className="rounded-xl bg-white p-4 text-center shadow-sm">
                     <Icon className="mx-auto h-5 w-5 text-dental" />
-                    <div className="mt-2 text-lg font-bold text-foreground">
-                      {item.value}
-                    </div>
+                    <div className="mt-2 text-lg font-bold text-foreground">{item.value}</div>
                     <div className="text-xs text-muted-foreground">{item.label}</div>
                   </div>
                 );

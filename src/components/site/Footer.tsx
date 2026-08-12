@@ -17,23 +17,15 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-dental text-white">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
                   <path d="M12 2C9.5 2 7.5 3.5 7.5 6c0 1.5.5 2.5 1 3.5.5 1 1 2 1 3.5 0 1.5-.5 2.5-1 3.5-.5 1-1 2-1 3.5 0 1.5 1.5 2 3 2s2.5-1 2.5-2.5c0-1.5-.5-2.5-1-3.5-.5-1-1-2-1-3.5 0-1.5.5-2.5 1-3.5.5-1 1-2 1-3.5 0-2.5-2-4-4.5-4z" />
                 </svg>
               </div>
-              <span className="text-lg font-bold text-white">
-                Dra. Teresa Marly
-              </span>
+              <span className="text-lg font-bold text-white">Dra. Teresa Marly</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">
-              Clínica de implantes e odontologia em Teresina. Atendimento
-              humanizado, tecnologia moderna e resultados que transformam
-              sorrisos.
+              Clínica de implantes e odontologia em Teresina. Atendimento humanizado, tecnologia
+              moderna e resultados que transformam sorrisos.
             </p>
             <div className="mt-4 flex gap-3">
               <a
@@ -76,9 +68,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-white">
-              Contato
-            </h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wider text-white">Contato</h4>
             <ul className="mt-4 space-y-3">
               <li>
                 <a
@@ -107,8 +97,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-white/50">
-          © {new Date().getFullYear()} Dra. Teresa Marly. Todos os direitos
-          reservados.
+          © {new Date().getFullYear()} Dra. Teresa Marly. Todos os direitos reservados.
         </div>
       </div>
     </footer>

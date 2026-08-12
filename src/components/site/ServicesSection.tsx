@@ -1,11 +1,4 @@
-import {
-  Stethoscope,
-  Smile,
-  Sparkles,
-  ShieldCheck,
-  Scan,
-  HeartPulse,
-} from "lucide-react";
+import { Stethoscope, Smile, Sparkles, ShieldCheck, Scan, HeartPulse } from "lucide-react";
 
 const services = [
   {
@@ -58,8 +51,8 @@ export function ServicesSection() {
             Cuidado completo para o seu sorriso
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Da prevenção à reabilitação oral, oferecemos tratamentos modernos com
-            atenção aos detalhes que fazem a diferença no seu dia a dia.
+            Da prevenção à reabilitação oral, oferecemos tratamentos modernos com atenção aos
+            detalhes que fazem a diferença no seu dia a dia.
           </p>
         </div>
 
@@ -74,9 +67,7 @@ export function ServicesSection() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-dental/10 text-dental transition-colors group-hover:bg-dental group-hover:text-white">
                   <Icon className="h-6 w-6" />
                 </div>
-                <h3 className="mt-4 text-xl font-semibold text-foreground">
-                  {service.title}
-                </h3>
+                <h3 className="mt-4 text-xl font-semibold text-foreground">{service.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>

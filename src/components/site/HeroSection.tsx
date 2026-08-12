@@ -23,14 +23,13 @@ export function HeroSection() {
             </div>
 
             <h1 className="mt-6 text-balance text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
-              Sorria com confiança com a{" "}
-              <span className="text-dental">Dra. Teresa Marly</span>
+              Sorria com confiança com a <span className="text-dental">Dra. Teresa Marly</span>
             </h1>
 
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Especialista em implantes dentários e reabilitação oral em Teresina.
-              Atendimento humanizado, mãos leves e tecnologia moderna para devolver
-              seu sorriso e qualidade de vida.
+              Especialista em implantes dentários e reabilitação oral em Teresina. Atendimento
+              humanizado, mãos leves e tecnologia moderna para devolver seu sorriso e qualidade de
+              vida.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -39,11 +38,7 @@ export function HeroSection() {
                 size="lg"
                 className="bg-dental hover:bg-dental-dark text-white shadow-dental"
               >
-                <a
-                  href={getWhatsAppUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer">
                   <Phone className="mr-2 h-5 w-5" />
                   Agendar avaliação gratuita
                 </a>

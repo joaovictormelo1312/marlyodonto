@@ -45,8 +45,8 @@ export function TestimonialsSection() {
             O que nossos pacientes dizem
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Nota máxima no Google. Cada avaliação reflete o cuidado e dedicação
-            que temos com quem confia em nosso trabalho.
+            Nota máxima no Google. Cada avaliação reflete o cuidado e dedicação que temos com quem
+            confia em nosso trabalho.
           </p>
         </div>
 
@@ -59,22 +59,15 @@ export function TestimonialsSection() {
               <Quote className="absolute top-4 right-4 h-8 w-8 text-dental/20" />
               <div className="flex gap-1">
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-4 w-4 fill-gold text-gold"
-                  />
+                  <Star key={i} className="h-4 w-4 fill-gold text-gold" />
                 ))}
               </div>
-              <p className="mt-4 text-sm leading-relaxed text-foreground">
-                “{testimonial.text}”
-              </p>
+              <p className="mt-4 text-sm leading-relaxed text-foreground">“{testimonial.text}”</p>
               <div className="mt-4 flex items-center gap-3">
                 <div className="flex h-9 w-9 items-center justify-center rounded-full bg-dental/10 text-dental text-sm font-bold">
                   {testimonial.name.charAt(0)}
                 </div>
-                <span className="text-sm font-medium text-foreground">
-                  {testimonial.name}
-                </span>
+                <span className="text-sm font-medium text-foreground">{testimonial.name}</span>
               </div>
             </div>
           ))}

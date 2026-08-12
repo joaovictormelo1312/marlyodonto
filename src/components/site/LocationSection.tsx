@@ -15,8 +15,8 @@ export function LocationSection() {
             Venha nos conhecer
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Clínica moderna e acessível no coração de Teresina, com fácil
-            estacionamento e ambiente acolhedor.
+            Clínica moderna e acessível no coração de Teresina, com fácil estacionamento e ambiente
+            acolhedor.
           </p>
         </div>
 
@@ -52,9 +52,7 @@ export function LocationSection() {
               </div>
               <div>
                 <h3 className="font-semibold text-foreground">Horário de funcionamento</h3>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  {siteConfig.hours}
-                </p>
+                <p className="mt-1 text-sm text-muted-foreground">{siteConfig.hours}</p>
               </div>
             </div>
 
@@ -77,8 +75,7 @@ export function LocationSection() {
               <div>
                 <h3 className="font-semibold text-foreground">Como chegar</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Localizado no Manhattan River Center, com fácil acesso e
-                  estacionamento próximo.
+                  Localizado no Manhattan River Center, com fácil acesso e estacionamento próximo.
                 </p>
               </div>
             </div>
@@ -87,11 +84,7 @@ export function LocationSection() {
               asChild
               className="mt-2 w-full bg-dental hover:bg-dental-dark text-white shadow-dental"
             >
-              <a
-                href={siteConfig.address.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={siteConfig.address.mapsUrl} target="_blank" rel="noopener noreferrer">
                 <MapPin className="mr-2 h-4 w-4" />
                 Abrir no Google Maps
               </a>
