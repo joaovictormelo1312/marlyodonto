@@ -2,8 +2,8 @@ import { Award, Users, Clock, CheckCircle } from "lucide-react";
 import dentistaTeresa from "@/assets/dentista-teresa.jpg";
 
 const highlights = [
-  { icon: Award, label: "Especialista em implantes", value: "+10 anos" },
-  { icon: Users, label: "Pacientes atendidos", value: "+500" },
+  { icon: Award, label: "Especialista em implantes", value: "+40 anos" },
+  { icon: Users, label: "Pacientes atendidos", value: "+10.000" },
   { icon: Clock, label: "Atendimento personalizado", value: "100%" },
 ];
 
@@ -43,7 +43,7 @@ export function AboutSection() {
             </p>
 
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              Há mais de uma década, a Dra. Teresa Marly transforma vidas por meio da odontologia.
+              Há mais de quatro décadas, a Dra. Teresa Marly transforma vidas por meio da odontologia.
               Com mãos leves, bom humor e compromisso com a excelência, ela conduz cada tratamento
               com cuidado humano e tecnologia de ponta.
             </p>
@@ -85,3 +85,4 @@ export function AboutSection() {
     </section>
   );
 }
+
