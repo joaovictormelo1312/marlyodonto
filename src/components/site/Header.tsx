@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site-config";
 import { Button } from "@/components/ui/button";
+import icon from "@/assets/icon.png";
 
 const navLinks = [
   { href: "#inicio", label: "Início" },
@@ -31,11 +32,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-18 items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-dental text-white">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
-                <path d="M12 2C9.5 2 7.5 3.5 7.5 6c0 1.5.5 2.5 1 3.5.5 1 1 2 1 3.5 0 1.5-.5 2.5-1 3.5-.5 1-1 2-1 3.5 0 1.5 1.5 2 3 2s2.5-1 2.5-2.5c0-1.5-.5-2.5-1-3.5-.5-1-1-2-1-3.5 0-1.5.5-2.5 1-3.5.5-1 1-2 1-3.5 0-2.5-2-4-4.5-4z" />
-              </svg>
-            </div>
+            <img src={icon} alt="" className="h-9 w-9 rounded-lg object-cover" />
             <div className="flex flex-col">
               <span className="text-lg font-bold leading-tight text-foreground">
                 Dra. Teresa Marly

@@ -1,5 +1,6 @@
 import { Phone, MapPin, Instagram } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site-config";
+import icon from "@/assets/icon.png";
 
 const footerLinks = [
   { href: "#inicio", label: "Início" },
@@ -16,11 +17,7 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-dental text-white">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5" aria-hidden="true">
-                  <path d="M12 2C9.5 2 7.5 3.5 7.5 6c0 1.5.5 2.5 1 3.5.5 1 1 2 1 3.5 0 1.5-.5 2.5-1 3.5-.5 1-1 2-1 3.5 0 1.5 1.5 2 3 2s2.5-1 2.5-2.5c0-1.5-.5-2.5-1-3.5-.5-1-1-2-1-3.5 0-1.5.5-2.5 1-3.5.5-1 1-2 1-3.5 0-2.5-2-4-4.5-4z" />
-                </svg>
-              </div>
+              <img src={icon} alt="" className="h-9 w-9 rounded-lg object-cover" />
               <span className="text-lg font-bold text-white">Dra. Teresa Marly</span>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70">
