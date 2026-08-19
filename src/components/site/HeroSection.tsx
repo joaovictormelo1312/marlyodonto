@@ -2,6 +2,7 @@ import { Star, Phone, Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppUrl, siteConfig } from "@/lib/site-config";
 import heroSmile from "@/assets/hero-smile.png";
+import icon from "@/assets/icon.png";
 
 export function HeroSection() {
   return (
@@ -58,13 +59,11 @@ export function HeroSection() {
 
             <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-dental" />
+                  <Calendar className="h-5 w-5 text-dental" />
                 <span>Agendamento online</span>
               </div>
               <div className="flex items-center gap-2">
-                <svg className="h-4 w-4 text-dental" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2C9.5 2 7.5 3.5 7.5 6c0 1.5.5 2.5 1 3.5.5 1 1 2 1 3.5 0 1.5-.5 2.5-1 3.5-.5 1-1 2-1 3.5 0 1.5 1.5 2 3 2s2.5-1 2.5-2.5c0-1.5-.5-2.5-1-3.5-.5-1-1-2-1-3.5 0-1.5.5-2.5 1-3.5.5-1 1-2 1-3.5 0-2.5-2-4-4.5-4z" />
-                </svg>
+                <img src={icon} alt="" className="h-5 w-5 rounded-sm object-cover" />
                 <span>Implantes de alta precisão</span>
               </div>
             </div>

@@ -5,6 +5,7 @@ import { AboutSection } from "@/components/site/AboutSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { CTASection } from "@/components/site/CTASection";
 import { LocationSection } from "@/components/site/LocationSection";
+import { ScrollReveal } from "@/components/site/ScrollReveal";
 import { siteConfig } from "@/lib/site-config";
 import heroSmile from "@/assets/hero-smile.png";
 
@@ -28,12 +29,24 @@ export const Route = createFileRoute("/")({
 function IndexPage() {
   return (
     <>
-      <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <TestimonialsSection />
-      <CTASection />
-      <LocationSection />
+      <ScrollReveal>
+        <HeroSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ServicesSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <AboutSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <TestimonialsSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <CTASection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <LocationSection />
+      </ScrollReveal>
     </>
   );
 }

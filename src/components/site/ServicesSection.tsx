@@ -27,7 +27,7 @@ const services = [
   },
   {
     icon: Scan,
-    title: "Planejamento Digital",
+    title: "Avaliação Digital",
     description:
       "Diagnóstico por imagem e planejamento digital guiado para implantes mais seguros, rápidos e previsíveis.",
   },
