@@ -6,7 +6,7 @@ import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { CTASection } from "@/components/site/CTASection";
 import { LocationSection } from "@/components/site/LocationSection";
 import { siteConfig } from "@/lib/site-config";
-import heroSmile from "@/assets/hero-smile.jpg";
+import heroSmile from "@/assets/hero-smile.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({

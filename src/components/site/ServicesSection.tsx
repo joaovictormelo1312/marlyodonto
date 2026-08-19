@@ -29,7 +29,7 @@ const services = [
     icon: Scan,
     title: "Planejamento Digital",
     description:
-      "Diagnóstico por imagem 3D e planejamento digital guiado para implantes mais seguros, rápidos e previsíveis.",
+      "Diagnóstico por imagem e planejamento digital guiado para implantes mais seguros, rápidos e previsíveis.",
   },
   {
     icon: HeartPulse,

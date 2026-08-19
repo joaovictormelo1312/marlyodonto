@@ -1,7 +1,7 @@
 import { Star, Phone, Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppUrl, siteConfig } from "@/lib/site-config";
-import heroSmile from "@/assets/hero-smile.jpg";
+import heroSmile from "@/assets/hero-smile.png";
 
 export function HeroSection() {
   return (
@@ -18,7 +18,7 @@ export function HeroSection() {
             <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-dental shadow-sm">
               <Star className="h-4 w-4 fill-gold text-gold" />
               <span>
-                {siteConfig.rating.score.toFixed(1)} estrelas ({siteConfig.rating.count} avaliações)
+                {siteConfig.rating.score.toFixed(1)} estrelas
               </span>
             </div>
 
