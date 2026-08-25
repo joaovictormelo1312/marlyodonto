@@ -38,7 +38,7 @@ export function CTASection() {
           </a>
         </div>
         <p className="mt-4 text-sm text-white/80">
-          {siteConfig.whatsapp.display} · {siteConfig.address.short}
+          {siteConfig.address.short} · {siteConfig.whatsapp.display}
         </p>
       </div>
     </section>
