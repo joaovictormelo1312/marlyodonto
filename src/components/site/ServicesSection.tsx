@@ -1,5 +1,6 @@
 import { Stethoscope, Smile, Sparkles, ShieldCheck, Scan, HeartPulse } from "lucide-react";
 import implanteImage from "@/assets/implantedentario.png";
+import limpezaImage from "@/assets/limpezaprevençao.png";
 import protesesImage from "@/assets/proteses.png";
 import restauracaoImage from "@/assets/restauracao dental.png";
 
@@ -65,12 +66,16 @@ export function ServicesSection() {
             const isImplantService = service.title === "Implantes Dentários";
             const isProsthesisService = service.title === "Próteses sobre Implantes";
             const isRestorationService = service.title === "Restaurações";
+            const isPreventionService = service.title === "Limpeza e Prevenção";
             const serviceImage = isImplantService
               ? implanteImage
               : isProsthesisService
                 ? protesesImage
-                : restauracaoImage;
-            const hasImage = isImplantService || isProsthesisService || isRestorationService;
+                : isRestorationService
+                  ? restauracaoImage
+                  : limpezaImage;
+            const hasImage =
+              isImplantService || isProsthesisService || isRestorationService || isPreventionService;
             return (
               <div
                 key={service.title}
