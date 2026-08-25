@@ -1,6 +1,7 @@
 import { MapPin, Clock, Phone, Car } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
+import clinicaEntrada from "@/assets/clinica-entrada.jpg";
 import clinicaInterior from "@/assets/clinica-interior.jpg";
 
 export function LocationSection() {
@@ -15,22 +16,35 @@ export function LocationSection() {
             Venha nos conhecer
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Clínica moderna, acolhedora, localizada na zona leste de Teresina, próximo ao Jockey Class Hotel. Temos estacionamento.
-            
+            Clínica moderna, acolhedora, localizada na zona leste de Teresina, próximo ao Jockey
+            Class Hotel. Temos estacionamento.
           </p>
         </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="aspect-video overflow-hidden rounded-2xl shadow-dental">
-            <img
-              src={clinicaInterior}
-              alt="Interior moderno da clínica odontológica da Dra. Teresa Marly"
-              width={1920}
-              height={1088}
-              className="h-full w-full object-cover"
-              loading="lazy"
-              decoding="async"
-            />
+          <div className="grid grid-cols-2 gap-3 lg:self-stretch">
+            <div className="aspect-square overflow-hidden rounded-2xl shadow-dental lg:aspect-auto">
+              <img
+                src={clinicaEntrada}
+                alt="Recepção da clínica odontológica da Dra. Teresa Marly"
+                width={1101}
+                height={1254}
+                className="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-2xl shadow-dental lg:aspect-auto">
+              <img
+                src={clinicaInterior}
+                alt="Interior moderno da clínica odontológica da Dra. Teresa Marly"
+                width={1254}
+                height={1254}
+                className="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
 
           <div className="flex flex-col justify-center space-y-6 rounded-2xl bg-white p-8 shadow-sm">
@@ -75,7 +89,8 @@ export function LocationSection() {
               <div>
                 <h3 className="font-semibold text-foreground">Como chegar</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Localizado no Edificio Manhattan River Center, com fácil acesso e estacionamento próximo.
+                  Localizado no Edificio Manhattan River Center, com fácil acesso e estacionamento
+                  próximo.
                 </p>
               </div>
             </div>
