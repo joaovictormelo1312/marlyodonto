@@ -75,7 +75,7 @@ export function LocationSection() {
               <div>
                 <h3 className="font-semibold text-foreground">Como chegar</h3>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Localizado no Manhattan River Center, com fácil acesso e estacionamento próximo.
+                  Localizado no Edificio Manhattan River Center, com fácil acesso e estacionamento próximo.
                 </p>
               </div>
             </div>

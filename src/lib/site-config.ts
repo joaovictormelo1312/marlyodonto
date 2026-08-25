@@ -12,7 +12,7 @@ export const siteConfig = {
   },
   address: {
     full: "Ed. Manhattan River Center - Avenida Senador Arêa Leão 2185, R. Prof. Elías Tôrres, 1 - Sala: 1211, Teresina - PI, 64051-090",
-    short: "Manhattan River Center, Teresina - PI ",
+    short: "Edificio Manhattan River Center, Teresina - PI ",
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Ed.+Manhattan+River+Center,+Avenida+Senador+Arêa+Leão+2185,+Teresina+-+PI,+64051-090",
   },
