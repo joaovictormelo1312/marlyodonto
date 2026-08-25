@@ -21,7 +21,7 @@ export function LocationSection() {
         </div>
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="overflow-hidden rounded-2xl shadow-dental">
+          <div className="aspect-video overflow-hidden rounded-2xl shadow-dental">
             <img
               src={clinicaInterior}
               alt="Interior moderno da clínica odontológica da Dra. Teresa Marly"
