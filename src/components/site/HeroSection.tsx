@@ -28,9 +28,7 @@ export function HeroSection() {
             </h1>
 
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              Especialista em implantes dentários e reabilitação oral em Teresina. Atendimento
-              humanizado, mãos leves e tecnologia moderna para devolver seu sorriso e qualidade de
-              vida.
+              Especialista em implantes dentários e reabilitação oral em Teresina. Atendimento humanizado, seguro e tecnologia moderna para devolver seu sorriso, auto estima e saúde bucal.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

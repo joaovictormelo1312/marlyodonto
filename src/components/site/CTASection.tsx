@@ -17,8 +17,8 @@ export function CTASection() {
           Pronto para ter o sorriso que você sempre quis?
         </h2>
         <p className="mt-4 text-lg text-white/90">
-          Agende sua avaliação gratuita pelo WhatsApp e descubra o melhor tratamento para você.
-          Atendimento rápido, sem burocracia e com toda a atenção que você merece.
+          Agende sua avaliação pelo WhatsApp e descubra o melhor tratamento para você.
+          Atendimento rápido, com toda a atenção que você merece.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button asChild size="lg" className="bg-white text-dental hover:bg-cream shadow-lg">
