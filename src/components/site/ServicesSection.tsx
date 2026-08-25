@@ -1,7 +1,7 @@
 import { Stethoscope, Smile, Sparkles, ShieldCheck, Scan, HeartPulse } from "lucide-react";
 import implanteImage from "@/assets/implantedentario.png";
 import protesesImage from "@/assets/proteses.png";
-import restauracaoImage from "@/assets/restauracao dental.PNG";
+import restauracaoImage from "@/assets/restauracao dental.png";
 
 const services = [
   {
