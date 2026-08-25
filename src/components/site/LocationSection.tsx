@@ -16,7 +16,7 @@ export function LocationSection() {
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Clínica moderna, acolhedora, localizada na zona leste de Teresina, próximo ao Jockey Class Hotel. Temos estacionamento.
-          
+            
           </p>
         </div>
 

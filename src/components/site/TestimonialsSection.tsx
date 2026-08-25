@@ -45,7 +45,7 @@ export function TestimonialsSection() {
             O que nossos pacientes dizem
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Nota máxima no Google. Cada avaliação reflete o cuidado e dedicação que temos com quem
+            Cada avaliação reflete o cuidado e dedicação que temos com quem
             confia em nosso trabalho.
           </p>
         </div>
