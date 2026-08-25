@@ -111,7 +111,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           telephone: siteConfig.whatsapp.number,
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Avenida Senador Arêa Leão 2185, R. Prof. Elías Tôrres, 1 - Sl 1211",
+            streetAddress: "Avenida Senador Arêa Leão 2185, R. Prof. Elías Tôrres, 1 - Sala: 1211",
             addressLocality: "Teresina",
             addressRegion: "PI",
             postalCode: "64051-090",
