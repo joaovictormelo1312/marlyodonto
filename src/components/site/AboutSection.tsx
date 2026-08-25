@@ -43,9 +43,10 @@ export function AboutSection() {
             </p>
 
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              Há mais de quarenta anos, a Dra. Teresa Marly transforma vidas por meio da odontologia.
-              Com mãos leves, bom humor e compromisso com a excelência, ela conduz cada tratamento
-              com cuidado humano e tecnologia de ponta.
+              A Dra. Teresa Marly transforma vidas por meio da odontologia há 40 anos.
+              Com mãos leves, bom humor e compromisso com a excelência, ela conduz cada tratamento de modo humanizado, com materiais de qualidade,  tecnologia com laserterapia e equipe especializada para apoio e acompanhamento.
+
+              
             </p>
 
             <p className="mt-4 leading-relaxed text-muted-foreground">
