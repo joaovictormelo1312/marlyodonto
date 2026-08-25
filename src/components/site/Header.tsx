@@ -38,7 +38,7 @@ export function Header() {
                 Dra. Teresa Marly
               </span>
               <span className="text-xs leading-tight text-muted-foreground">
-                Estética & Implantes
+                Estética & Implantes 
               </span>
             </div>
           </Link>

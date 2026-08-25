@@ -39,7 +39,10 @@ export function AboutSection() {
               Dra. Teresa Marly
             </h2>
             <p className="mt-2 text-lg font-medium text-gold-dark">
-              Cirurgiã-dentista especialista em implantes
+              Cirurgiã-dentista: Especialista em Implantes, Mestre em Saúde da Família, Doutora em Engenharia Biomédica.
+              
+              
+              
             </p>
 
             <p className="mt-6 leading-relaxed text-muted-foreground">
