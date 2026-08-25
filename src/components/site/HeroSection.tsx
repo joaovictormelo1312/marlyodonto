@@ -39,7 +39,7 @@ export function HeroSection() {
               >
                 <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer">
                   <Phone className="mr-2 h-5 w-5" />
-                  Agendar avaliação gratuita
+                  Agendar avaliação 
                 </a>
               </Button>
               <Button

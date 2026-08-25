@@ -15,8 +15,8 @@ export function LocationSection() {
             Venha nos conhecer
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Clínica moderna e acessível no coração de Teresina, com fácil estacionamento e ambiente
-            acolhedor.
+            Clínica moderna, acolhedora, localizada na zona leste de Teresina, próximo ao Jockey Class Hotel. Temos estacionamento.
+          
           </p>
         </div>
 
