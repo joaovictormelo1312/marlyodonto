@@ -1,4 +1,7 @@
 import { Stethoscope, Smile, Sparkles, ShieldCheck, Scan, HeartPulse } from "lucide-react";
+import implanteImage from "@/assets/implantedentario.png";
+import protesesImage from "@/assets/proteses.png";
+import restauracaoImage from "@/assets/restauracao dental.PNG";
 
 const services = [
   {
@@ -59,16 +62,41 @@ export function ServicesSection() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {
             const Icon = service.icon;
+            const isImplantService = service.title === "Implantes Dentários";
+            const isProsthesisService = service.title === "Próteses sobre Implantes";
+            const isRestorationService = service.title === "Restaurações";
+            const serviceImage = isImplantService
+              ? implanteImage
+              : isProsthesisService
+                ? protesesImage
+                : restauracaoImage;
+            const hasImage = isImplantService || isProsthesisService || isRestorationService;
             return (
               <div
                 key={service.title}
-                className="group rounded-2xl border border-border bg-cream p-6 transition-all duration-300 hover:-translate-y-1 hover:border-dental/20 hover:shadow-dental"
+                className={`group rounded-2xl border border-border bg-cream transition-all duration-300 hover:-translate-y-1 hover:border-dental/20 hover:shadow-dental ${
+                  hasImage ? "overflow-hidden" : "p-6"
+                }`}
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-dental/10 text-dental transition-colors group-hover:bg-dental group-hover:text-white">
-                  <Icon className="h-6 w-6" />
-                </div>
-                <h3 className="mt-4 text-xl font-semibold text-foreground">{service.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {hasImage ? (
+                  <img
+                    src={serviceImage}
+                    alt={service.title}
+                    className="block w-full object-cover"
+                  />
+                ) : (
+                  <>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-dental/10 text-dental transition-colors group-hover:bg-dental group-hover:text-white">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mt-4 text-xl font-semibold text-foreground">{service.title}</h3>
+                  </>
+                )}
+                <p
+                  className={`${
+                    hasImage ? "p-6 pt-4" : "mt-2"
+                  } text-sm leading-relaxed text-muted-foreground`}
+                >
                   {service.description}
                 </p>
               </div>
