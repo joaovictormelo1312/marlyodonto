@@ -23,12 +23,6 @@ export function AboutSection() {
               loading="lazy"
               decoding="async"
             />
-            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-white p-5 shadow-dental">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-dental">5.0</div>
-                <div className="text-xs text-muted-foreground">Avaliação</div>
-              </div>
-            </div>
           </div>
 
           <div>

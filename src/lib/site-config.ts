@@ -10,6 +10,7 @@ export const siteConfig = {
     label: "Agendar pelo WhatsApp",
     message: "Olá! Gostaria de agendar uma consulta com a Dra. Teresa Marly.",
   },
+  email: "drateresamarly@gmail.com",
   address: {
     full: "Ed. Manhattan River Center - Avenida Senador Arêa Leão 2185, R. Prof. Elías Tôrres, 1 - Sala: 1211, Teresina - PI, 64051-090",
     short: "Edificio Manhattan River Center, Teresina - PI ",

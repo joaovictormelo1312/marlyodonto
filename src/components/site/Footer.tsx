@@ -1,4 +1,4 @@
-import { Phone, MapPin, Instagram } from "lucide-react";
+import { Phone, MapPin, Instagram, Mail } from "lucide-react";
 import { siteConfig, getWhatsAppUrl } from "@/lib/site-config";
 import icon from "@/assets/icon.png";
 
@@ -67,6 +67,15 @@ export function Footer() {
                 >
                   <Phone className="h-4 w-4 text-dental-light" />
                   {siteConfig.whatsapp.display}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="flex items-center gap-2 text-sm text-white/70 transition-colors hover:text-white"
+                >
+                  <Mail className="h-4 w-4 text-dental-light" />
+                  {siteConfig.email}
                 </a>
               </li>
               <li>

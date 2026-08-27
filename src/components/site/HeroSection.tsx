@@ -1,6 +1,6 @@
-import { Star, Phone, Calendar, ArrowRight } from "lucide-react";
+import { Phone, Calendar, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { getWhatsAppUrl, siteConfig } from "@/lib/site-config";
+import { getWhatsAppUrl } from "@/lib/site-config";
 import heroSmile from "@/assets/hero-smile.png";
 import icon from "@/assets/icon.png";
 
@@ -16,14 +16,7 @@ export function HeroSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-dental shadow-sm">
-              <Star className="h-4 w-4 fill-gold text-gold" />
-              <span>
-                {siteConfig.rating.score.toFixed(1)} estrelas
-              </span>
-            </div>
-
-            <h1 className="mt-6 text-balance text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="text-balance text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
               Sorria com confiança com a <span className="text-dental">Dra. Teresa Marly</span>
             </h1>
 

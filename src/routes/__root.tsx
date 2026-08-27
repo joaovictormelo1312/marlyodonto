@@ -117,12 +117,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             postalCode: "64051-090",
             addressCountry: "BR",
           },
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: siteConfig.rating.score,
-            reviewCount: siteConfig.rating.count,
-            bestRating: 5,
-          },
         }),
       },
     ],
