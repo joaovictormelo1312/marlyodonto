@@ -1,10 +1,11 @@
 import { Stethoscope, Smile, Sparkles, ShieldCheck, Scan, HeartPulse } from "lucide-react";
-import avaliacaoDigitalImage from "@/assets/avaliacaodigital.png";
-import esteticaImage from "@/assets/estetica-dental.png";
-import implanteImage from "@/assets/implantedentario.png";
-import limpezaImage from "@/assets/limpezaprevençao.png";
-import protesesImage from "@/assets/proteses.png";
-import restauracaoImage from "@/assets/restauracao dental.png";
+import avaliacaoDigitalImage from "@/assets/avaliacao-digital-sem-titulo.jpg";
+import esteticaImage from "@/assets/estetica-sem-titulo.jpg";
+import implanteImage from "@/assets/implante-sem-titulo.jpg";
+import limpezaImage from "@/assets/limpeza-sem-titulo.jpg";
+import protesesImage from "@/assets/proteses-sem-titulo.jpg";
+import restauracaoImage from "@/assets/restauracao-sem-titulo.jpg";
+import dentalMark from "@/assets/dental-mark.svg";
 
 const services = [
   {
@@ -44,6 +45,27 @@ const services = [
       "Profilaxia, remoção de tártaro e orientação de higiene para manter sua saúde bucal em dia sem dor.",
   },
 ];
+
+function DentalMark() {
+  return <img src={dentalMark} alt="" className="h-7 w-7" />;
+}
+
+function ArtworkHeader({ title }: { title: string }) {
+  return (
+    <div className="flex h-full w-full flex-col items-center justify-center gap-0.5 px-3 text-center">
+      <div className="flex max-w-full items-center justify-center gap-2 px-3 py-2 text-dental/60">
+        <span className="h-px w-9 bg-current sm:w-12" />
+        <span className="text-[0.58rem] font-semibold uppercase tracking-[0.16em] text-foreground sm:text-[0.68rem]">
+          {title}
+        </span>
+        <span className="h-px w-9 bg-current sm:w-12" />
+      </div>
+      <span className="flex h-8 w-8 items-center justify-center">
+        <DentalMark />
+      </span>
+    </div>
+  );
+}
 
 export function ServicesSection() {
   return (
@@ -92,16 +114,23 @@ export function ServicesSection() {
             return (
               <div
                 key={service.title}
-                className={`group rounded-2xl border border-border bg-cream transition-all duration-300 hover:-translate-y-1 hover:border-dental/20 hover:shadow-dental ${
+                className={`group flex h-full flex-col rounded-2xl border border-border bg-cream transition-all duration-300 hover:-translate-y-1 hover:border-dental/20 hover:shadow-dental ${
                   hasImage ? "overflow-hidden" : "p-6"
                 }`}
               >
                 {hasImage ? (
-                  <img
-                    src={serviceImage}
-                    alt={service.title}
-                    className="block w-full object-cover"
-                  />
+                  <div className="bg-[#fbfafb]">
+                    <div className="flex h-24 shrink-0 items-center justify-center">
+                      <ArtworkHeader title={service.title} />
+                    </div>
+                    <div className="aspect-square w-full shrink-0 overflow-hidden">
+                      <img
+                        src={serviceImage}
+                        alt={service.title}
+                        className="block h-full w-full object-cover object-center"
+                      />
+                    </div>
+                  </div>
                 ) : (
                   <>
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-dental/10 text-dental transition-colors group-hover:bg-dental group-hover:text-white">
@@ -112,7 +141,7 @@ export function ServicesSection() {
                 )}
                 <p
                   className={`${
-                    hasImage ? "p-6 pt-4" : "mt-2"
+                    hasImage ? "min-h-[8.5rem] flex-1 p-6 pt-4" : "mt-2"
                   } text-sm leading-relaxed text-muted-foreground`}
                 >
                   {service.description}
